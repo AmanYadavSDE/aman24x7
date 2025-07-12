@@ -44,7 +44,7 @@ const Hero = () => {
               <div className="w-32 h-32 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 p-1 animate-glow">
                 <div className="w-full h-full bg-dark-800 rounded-full flex items-center justify-center overflow-hidden">
                   <img 
-                    src={`/image.jpg?v=${Date.now()}`}
+                    src={`${import.meta.env.BASE_URL}image.jpg?v=${Date.now()}`}
                     alt="Aman Yadav" 
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {
@@ -118,7 +118,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Aman_Yadav_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -146,7 +146,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="https://github.com/your-github-username"
+              href="https://github.com/AmanYadavSDE"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: -5 }}
