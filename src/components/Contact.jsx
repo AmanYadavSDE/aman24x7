@@ -92,7 +92,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="section-padding bg-dark-800/50">
+    <section id="contact" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -109,7 +109,7 @@ const Contact = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               Get In <span className="gradient-text">Touch</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
             <p className="text-gray-300 mt-6 max-w-2xl mx-auto">
               I'm always open to discussing new opportunities, interesting projects, or just having a great conversation about technology and software engineering.
             </p>
@@ -141,7 +141,7 @@ const Contact = () => {
                     whileHover={{ scale: 1.05 }}
                     className="glass-card card-hover flex items-center space-x-4 block"
                   >
-                    <div className="p-4 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full text-white">
+                    <div className="p-4 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full text-gray-300">
                       {info.icon}
                     </div>
                     <div>
@@ -170,7 +170,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.2, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}
-                      className={`p-3 bg-dark-700 rounded-full text-gray-400 ${social.color} transition-colors duration-300`}
+                      className={`p-3 bg-black border border-gray-700 rounded-full text-gray-400 ${social.color} transition-colors duration-300`}
                     >
                       {social.icon}
                     </motion.a>
@@ -184,7 +184,7 @@ const Contact = () => {
                 className="glass-card"
               >
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-gray-400 rounded-full animate-pulse"></div>
                   <h4 className="text-lg font-semibold text-white">
                     Currently at Swiggy
                   </h4>
@@ -218,7 +218,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:outline-none focus:border-primary-400 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 text-white placeholder-gray-400"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -234,7 +234,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:outline-none focus:border-primary-400 text-white placeholder-gray-400"
+                      className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 text-white placeholder-gray-400"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -251,7 +251,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:outline-none focus:border-primary-400 text-white placeholder-gray-400"
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 text-white placeholder-gray-400"
                     placeholder="What's this about?"
                   />
                 </div>
@@ -267,7 +267,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-lg focus:outline-none focus:border-primary-400 text-white placeholder-gray-400 resize-none"
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-gray-500 text-white placeholder-gray-400 resize-none"
                     placeholder="Tell me about your project or opportunity!"
                   />
                 </div>

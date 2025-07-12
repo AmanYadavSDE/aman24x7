@@ -13,15 +13,13 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark-900 text-white">
-      <div className="fixed inset-0 bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 -z-10"></div>
-      
-      {/* Background Animation */}
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* Background Elements */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gray-900/10 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute top-3/4 right-1/4 w-64 h-64 bg-gray-800/10 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 left-1/2 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gray-900/5 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute top-3/4 right-1/4 w-64 h-64 bg-gray-800/5 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-64 h-64 bg-gray-700/5 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}}></div>
         </div>
       </div>
 

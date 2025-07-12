@@ -39,7 +39,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-dark-900 border-t border-dark-700">
+    <footer className="bg-black border-t border-gray-800">
       <div className="container-max py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -64,7 +64,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  className={`p-3 bg-dark-700 rounded-full text-gray-400 ${social.color} transition-colors duration-300`}
+                  className={`p-3 bg-black border border-gray-700 rounded-full text-gray-400 ${social.color} transition-colors duration-300`}
                 >
                   {social.icon}
                 </motion.a>
@@ -101,28 +101,30 @@ const Footer = () => {
             </div>
             <div className="mt-4">
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-gray-400 rounded-full animate-pulse"></div>
                 <span className="text-sm text-gray-400">Open to opportunities</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-dark-700 mt-8 pt-8">
+        <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               <p className="flex items-center">
-                © 2024 Aman Yadav. Made with <FaHeart className="text-red-500 mx-1" /> and lots of coffee.
+                © 2024 Aman Yadav. Made with{' '}
+                <FaHeart className="text-red-500 mx-1" />{' '}
+                and lots of coffee.
               </p>
             </div>
             
             <div className="flex items-center space-x-4 text-sm text-gray-400">
-              <span>Built with React & Tailwind CSS</span>
+              <span>Built with Cursor</span>
               <motion.button
                 onClick={scrollToTop}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-2 bg-dark-700 rounded-full hover:bg-primary-600 transition-colors duration-300"
+                className="p-2 bg-black border border-gray-700 rounded-full hover:bg-gray-800 transition-colors duration-300"
               >
                 <HiArrowUp className="text-lg" />
               </motion.button>

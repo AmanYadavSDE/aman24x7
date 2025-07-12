@@ -33,24 +33,24 @@ const About = () => {
 
   const highlights = [
     {
-      icon: <HiCode className="text-3xl text-primary-400" />,
+      icon: <HiCode className="text-3xl text-gray-300" />,
       title: "System Architecture",
       description: "Designing scalable distributed systems and microservices architecture"
     },
     {
-      icon: <HiLightBulb className="text-3xl text-accent-400" />,
+      icon: <HiLightBulb className="text-3xl text-gray-300" />,
       title: "Innovation Leader",
       description: "Leading chatbot team and developing innovative solutions at Swiggy"
     },
     {
-      icon: <HiUsers className="text-3xl text-purple-400" />,
+      icon: <HiUsers className="text-3xl text-gray-300" />,
       title: "Team Leadership",
       description: "Spearheading cross-functional teams and mentoring junior developers"
     }
   ]
 
   return (
-    <section id="about" className="section-padding bg-dark-800/50">
+    <section id="about" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -67,7 +67,7 @@ const About = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               About <span className="gradient-text">Me</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -125,7 +125,7 @@ const About = () => {
                     className="glass-card card-hover"
                   >
                     <div className="flex items-start space-x-4">
-                      <div className="p-3 bg-dark-700 rounded-lg">
+                      <div className="p-3 bg-black border border-gray-700 rounded-lg">
                         {highlight.icon}
                       </div>
                       <div>
@@ -151,19 +151,19 @@ const About = () => {
                 </h4>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     Won 3 MVP awards at Swiggy for exceptional individual performance
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     Received 2 Swiggsters team awards for outstanding collaboration
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     Achieved 5★ rating on CodeChef with 247+ problems solved
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     Attained Expert level on Codeforces (1609 rating) and Knight rank on LeetCode
                   </li>
                 </ul>

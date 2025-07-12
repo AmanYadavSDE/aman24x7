@@ -168,7 +168,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="section-padding">
+    <section id="education" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -185,7 +185,7 @@ const Education = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               Education & <span className="gradient-text">Certifications</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
             <p className="text-gray-300 mt-6 max-w-2xl mx-auto">
               My academic foundation from NIT Delhi and extensive professional certifications spanning cloud technologies, programming languages, machine learning, and software development
             </p>
@@ -209,8 +209,8 @@ const Education = () => {
                   className="glass-card card-hover"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="p-4 bg-gradient-to-r from-primary-600 to-accent-600 rounded-full">
-                      <HiAcademicCap className="text-2xl text-white" />
+                    <div className="p-4 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full">
+                      <HiAcademicCap className="text-2xl text-gray-300" />
                     </div>
                     
                     <div className="flex-1">
@@ -219,25 +219,25 @@ const Education = () => {
                           <h4 className="text-2xl font-bold text-white mb-2">
                             {edu.degree}
                           </h4>
-                          <p className="text-lg text-primary-400 mb-2">
+                          <p className="text-lg text-gray-400 mb-2">
                             {edu.field}
                           </p>
                           <div className="flex items-center space-x-4 text-gray-300 mb-2">
                             <div className="flex items-center">
-                              <HiAcademicCap className="mr-2 text-primary-400" />
+                              <HiAcademicCap className="mr-2 text-gray-400" />
                               <span className="font-medium">{edu.institution}</span>
                             </div>
                             <div className="flex items-center">
-                              <HiLocationMarker className="mr-2 text-accent-400" />
+                              <HiLocationMarker className="mr-2 text-gray-400" />
                               <span>{edu.location}</span>
                             </div>
                           </div>
                           <div className="flex items-center space-x-4 text-gray-400 mb-4">
                             <div className="flex items-center">
-                              <HiCalendar className="mr-2 text-purple-400" />
+                              <HiCalendar className="mr-2 text-gray-400" />
                               <span>{edu.duration}</span>
                             </div>
-                            <div className="px-3 py-1 bg-gradient-to-r from-primary-600/20 to-accent-600/20 border border-primary-500/30 rounded-full text-sm">
+                            <div className="px-3 py-1 bg-black/20 border border-gray-700/50 rounded-full text-sm">
                               {edu.grade}
                             </div>
                           </div>
@@ -255,7 +255,7 @@ const Education = () => {
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                           {edu.highlights.map((highlight, i) => (
                             <li key={i} className="flex items-start text-gray-300">
-                              <span className="w-2 h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                              <span className="w-2 h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                               {highlight}
                             </li>
                           ))}
@@ -285,15 +285,15 @@ const Education = () => {
                   className="glass-card card-hover"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-gradient-to-r from-accent-600 to-primary-600 rounded-full">
-                      <HiBadgeCheck className="text-xl text-white" />
+                    <div className="p-3 bg-gradient-to-r from-gray-800 to-gray-900 rounded-full">
+                      <HiBadgeCheck className="text-xl text-gray-300" />
                     </div>
                     
                     <div className="flex-1">
                       <h4 className="text-lg font-bold text-white mb-2">
                         {cert.name}
                       </h4>
-                      <p className="text-primary-400 mb-2">
+                      <p className="text-gray-400 mb-2">
                         {cert.issuer}
                       </p>
                       <div className="flex flex-wrap items-center gap-2 text-sm text-gray-400">
@@ -302,7 +302,7 @@ const Education = () => {
                           href={cert.credentialUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-2 py-1 bg-dark-700 rounded text-xs text-accent-blue hover:text-accent-cyan transition-colors"
+                          className="px-2 py-1 bg-black border border-gray-700 rounded text-xs text-gray-300 hover:text-gray-100 transition-colors"
                         >
                           View Credential
                         </a>
@@ -336,7 +336,7 @@ const Education = () => {
                 ].map((skill, index) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-gradient-to-r from-primary-600/20 to-accent-600/20 border border-primary-500/30 rounded-full text-sm text-white"
+                    className="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-white shadow-lg"
                   >
                     {skill}
                   </span>

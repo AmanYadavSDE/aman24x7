@@ -38,94 +38,94 @@ const CodingProfiles = () => {
       name: "CodeChef",
       username: "aman212yadav",
       url: "https://www.codechef.com/users/aman212yadav",
-      icon: <SiCodechef className="text-4xl text-yellow-400" />,
+      icon: <SiCodechef className="text-4xl text-gray-300" />,
       achievement: "5★ Star",
       rating: "2020 (Max)",
       stats: "247 Problems Solved",
       description: "Achieved 5★ rating with consistent performance in 30+ contests",
-      color: "from-yellow-500 to-orange-500",
-      bgColor: "from-yellow-500/20 to-orange-500/20",
-      borderColor: "border-yellow-500/30"
+      color: "from-gray-800 to-gray-900",
+      bgColor: "from-gray-800/20 to-gray-900/20",
+      borderColor: "border-gray-700/50"
     },
     {
       name: "LeetCode", 
       username: "NaughtyNikki",
       url: "https://leetcode.com/u/NaughtyNikki/",
-      icon: <SiLeetcode className="text-4xl text-orange-400" />,
+      icon: <SiLeetcode className="text-4xl text-gray-300" />,
       achievement: "Knight",
       rating: "1963",
       stats: "Active Contests",
       description: "Knight rank with strong algorithmic problem-solving skills",
-      color: "from-orange-500 to-red-500",
-      bgColor: "from-orange-500/20 to-red-500/20", 
-      borderColor: "border-orange-500/30"
+      color: "from-gray-800 to-black",
+      bgColor: "from-gray-800/20 to-black/20", 
+      borderColor: "border-gray-700/50"
     },
     {
       name: "Codeforces",
       username: "aman212yadav", 
       url: "https://codeforces.com/profile/aman212yadav",
-      icon: <SiCodeforces className="text-4xl text-blue-400" />,
+      icon: <SiCodeforces className="text-4xl text-gray-300" />,
       achievement: "Expert",
       rating: "1609",
       stats: "Regular Contests",
       description: "Expert level with consistent competitive programming performance",
-      color: "from-blue-500 to-indigo-500",
-      bgColor: "from-blue-500/20 to-indigo-500/20",
-      borderColor: "border-blue-500/30"
+      color: "from-black to-gray-800",
+      bgColor: "from-black/20 to-gray-800/20",
+      borderColor: "border-gray-700/50"
     },
     {
       name: "HackerEarth",
       username: "aman212yadav",
       url: "https://www.hackerearth.com/@aman212yadav/",
-      icon: <HiCode className="text-4xl text-purple-400" />,
+      icon: <HiCode className="text-4xl text-gray-300" />,
       achievement: "Elite",
       rating: "1639", 
       stats: "Elite Developer",
       description: "Elite status demonstrating exceptional programming capabilities",
-      color: "from-purple-500 to-pink-500",
-      bgColor: "from-purple-500/20 to-pink-500/20",
-      borderColor: "border-purple-500/30"
+      color: "from-gray-900 to-black",
+      bgColor: "from-gray-900/20 to-black/20",
+      borderColor: "border-gray-700/50"
     },
     {
       name: "HackerRank",
       username: "aman212yadav",
       url: "https://www.hackerrank.com/profile/aman212yadav", 
-      icon: <SiHackerrank className="text-4xl text-green-400" />,
+      icon: <SiHackerrank className="text-4xl text-gray-300" />,
       achievement: "Certified",
       rating: "Multiple Certs",
       stats: "6 Certifications",
       description: "Java, Python, Problem Solving, C++ certified with verified skills",
-      color: "from-green-500 to-teal-500",
-      bgColor: "from-green-500/20 to-teal-500/20",
-      borderColor: "border-green-500/30"
+      color: "from-black to-gray-900",
+      bgColor: "from-black/20 to-gray-900/20",
+      borderColor: "border-gray-700/50"
     }
   ]
 
   const achievements = [
     {
-      icon: <FaTrophy className="text-2xl text-yellow-400" />,
+      icon: <FaTrophy className="text-2xl text-gray-400" />,
       title: "5★ CodeChef Rating",
       value: "2020"
     },
     {
-      icon: <HiStar className="text-2xl text-blue-400" />,
+      icon: <HiStar className="text-2xl text-gray-400" />,
       title: "Problems Solved",
       value: "500+"
     },
     {
-      icon: <HiCode className="text-2xl text-green-400" />,
+      icon: <HiCode className="text-2xl text-gray-400" />,
       title: "Avg Rating",
       value: "1700+"
     },
     {
-      icon: <FaTrophy className="text-2xl text-purple-400" />,
+      icon: <FaTrophy className="text-2xl text-gray-400" />,
       title: "Platforms",
       value: "5"
     }
   ]
 
   return (
-    <section id="coding" className="section-padding bg-dark-800/50">
+    <section id="coding" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -142,7 +142,7 @@ const CodingProfiles = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               Competitive <span className="gradient-text">Programming</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
             <p className="text-gray-300 mt-6 max-w-2xl mx-auto">
               Achieved expert-level ratings across all major competitive programming platforms - 5★ CodeChef (2020), Knight LeetCode (1963), Expert Codeforces (1609), Elite HackerEarth (1639)
             </p>
@@ -250,7 +250,7 @@ const CodingProfiles = () => {
                 ].map((skill, index) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-gradient-to-r from-primary-600/20 to-accent-600/20 border border-primary-500/30 rounded-full text-sm text-white"
+                    className="px-4 py-2 bg-black border border-gray-700 rounded-full text-sm text-white shadow-lg"
                   >
                     {skill}
                   </span>

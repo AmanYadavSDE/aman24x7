@@ -5,7 +5,8 @@ import {
   FaJava, 
   FaAws, 
   FaDocker, 
-  FaGitAlt 
+  FaGitAlt,
+  FaPython 
 } from 'react-icons/fa'
 import { 
   SiGo, 
@@ -15,7 +16,9 @@ import {
   SiSpringboot,
   SiAmazondynamodb,
   SiRedis,
-  SiKubernetes
+  SiKubernetes,
+  SiC,
+  SiCplusplus
 } from 'react-icons/si'
 
 const Skills = () => {
@@ -50,40 +53,42 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Go", icon: <SiGo className="text-cyan-400" />, level: 90 },
-        { name: "Java", icon: <FaJava className="text-red-400" />, level: 95 },
-        { name: "Spring Boot", icon: <SiSpringboot className="text-green-400" />, level: 85 }
+        { name: "Go", icon: <SiGo className="text-gray-300" />, level: 90 },
+        { name: "Java", icon: <FaJava className="text-gray-300" />, level: 95 },
+        { name: "Python", icon: <FaPython className="text-gray-300" />, level: 85 },
+        { name: "C", icon: <SiC className="text-gray-300" />, level: 80 },
+        { name: "C++", icon: <SiCplusplus className="text-gray-300" />, level: 75 }
       ]
     },
     {
-      title: "Distributed Systems",
+      title: "Frameworks & Libraries",
       skills: [
-        { name: "Apache Kafka", icon: <SiApachekafka className="text-white" />, level: 95 },
-        { name: "Microservices", icon: <SiKubernetes className="text-blue-400" />, level: 85 },
-        { name: "System Design", icon: <FaDocker className="text-blue-400" />, level: 90 }
+        { name: "Spring Boot", icon: <SiSpringboot className="text-gray-300" />, level: 85 },
+        { name: "Apache Kafka", icon: <SiApachekafka className="text-gray-300" />, level: 95 },
+        { name: "Microservices", icon: <SiKubernetes className="text-gray-300" />, level: 85 }
       ]
     },
     {
       title: "Cloud & Database",
       skills: [
-        { name: "AWS", icon: <FaAws className="text-orange-400" />, level: 85 },
-        { name: "DynamoDB", icon: <SiAmazondynamodb className="text-blue-400" />, level: 80 },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-400" />, level: 85 },
-        { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-400" />, level: 75 }
+        { name: "AWS", icon: <FaAws className="text-gray-300" />, level: 85 },
+        { name: "DynamoDB", icon: <SiAmazondynamodb className="text-gray-300" />, level: 80 },
+        { name: "MongoDB", icon: <SiMongodb className="text-gray-300" />, level: 85 },
+        { name: "PostgreSQL", icon: <SiPostgresql className="text-gray-300" />, level: 75 }
       ]
     },
     {
       title: "DevOps & Tools",
       skills: [
-        { name: "Docker", icon: <FaDocker className="text-blue-400" />, level: 80 },
-        { name: "Git", icon: <FaGitAlt className="text-orange-400" />, level: 90 },
-        { name: "Redis", icon: <SiRedis className="text-red-400" />, level: 75 }
+        { name: "Docker", icon: <FaDocker className="text-gray-300" />, level: 80 },
+        { name: "Git", icon: <FaGitAlt className="text-gray-300" />, level: 90 },
+        { name: "Redis", icon: <SiRedis className="text-gray-300" />, level: 75 }
       ]
     }
   ]
 
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -100,7 +105,7 @@ const Skills = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               Technical <span className="gradient-text">Skills</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
             <p className="text-gray-300 mt-6 max-w-2xl mx-auto">
               Technologies I use to build scalable systems and solve complex problems
             </p>
@@ -123,7 +128,7 @@ const Skills = () => {
                       key={skill.name}
                       variants={itemVariants}
                       whileHover={{ scale: 1.05 }}
-                      className="flex items-center space-x-3 p-3 bg-dark-700/50 rounded-lg hover:bg-dark-700 transition-colors duration-300"
+                      className="flex items-center space-x-3 p-3 bg-black/50 rounded-lg hover:bg-gray-900/50 transition-colors duration-300"
                     >
                       <div className="text-2xl">
                         {skill.icon}
@@ -137,12 +142,12 @@ const Skills = () => {
                             {skill.level}%
                           </span>
                         </div>
-                        <div className="w-full bg-dark-600 rounded-full h-2">
+                        <div className="w-full bg-gray-800 rounded-full h-2">
                           <motion.div
                             initial={{ width: 0 }}
                             animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
                             transition={{ duration: 1, delay: categoryIndex * 0.1 + index * 0.1 }}
-                            className="h-2 bg-gradient-to-r from-primary-400 to-accent-400 rounded-full"
+                            className="h-2 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full"
                           />
                         </div>
                       </div>

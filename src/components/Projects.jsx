@@ -37,7 +37,7 @@ const Projects = () => {
       title: "Zooki Clone",
       description: "A comprehensive video calling application developed using Node.js having minimal requirements for making video calls by just sharing the link to the specific person.",
       duration: "May 2020 - May 2020",
-      icon: <FaVideo className="text-red-400" />,
+      icon: <FaVideo className="text-gray-300" />,
       features: [
         "Creating rooms",
         "Muting/Unmuting the audio",
@@ -46,13 +46,13 @@ const Projects = () => {
       ],
       technologies: ["Node.js", "Socket.io", "WebRTC", "JavaScript", "HTML/CSS"],
       category: "Full Stack",
-      color: "from-red-500 to-pink-500"
+      color: "from-gray-800 to-gray-900"
     },
     {
       title: "Confusion Restaurant",
       description: "Frontend for a restaurant website developed with help of HTML, CSS, Bootstrap and some jQuery, and deployed the same over Google Firebase.",
       duration: "Dec 2019 - Dec 2019",
-      icon: <FaUtensils className="text-orange-400" />,
+      icon: <FaUtensils className="text-gray-300" />,
       features: [
         "Responsive restaurant website",
         "Menu display and navigation",
@@ -61,13 +61,13 @@ const Projects = () => {
       ],
       technologies: ["HTML", "CSS", "Bootstrap", "jQuery", "Firebase"],
       category: "Frontend",
-      color: "from-orange-500 to-yellow-500"
+      color: "from-black to-gray-800"
     },
     {
       title: "Polling Web App",
       description: "A comprehensive polling web application developed using Django with multiple advanced features for creating and managing polls.",
       duration: "Sep 2019 - Oct 2019",
-      icon: <FaVoteYea className="text-blue-400" />,
+      icon: <FaVoteYea className="text-gray-300" />,
       features: [
         "User signup/login system",
         "Add poll, edit, delete poll",
@@ -79,13 +79,13 @@ const Projects = () => {
       ],
       technologies: ["Django", "Python", "HTML/CSS", "JavaScript", "SQLite"],
       category: "Full Stack",
-      color: "from-blue-500 to-indigo-500"
+      color: "from-gray-900 to-black"
     },
     {
       title: "Chat's Up",
       description: "A simple chat app using Node.js and Socket.io that allows users to authenticate and signup for realtime text messages and images.",
       duration: "Jun 2019 - Jul 2019",
-      icon: <FaComments className="text-green-400" />,
+      icon: <FaComments className="text-gray-300" />,
       features: [
         "User authentication and signup",
         "Realtime text messaging",
@@ -94,13 +94,13 @@ const Projects = () => {
       ],
       technologies: ["Node.js", "Socket.io", "Firebase", "JavaScript", "HTML/CSS"],
       category: "Full Stack",
-      color: "from-green-500 to-teal-500"
+      color: "from-gray-800 to-black"
     },
     {
       title: "Backend for QEats App",
       description: "Built a backend for food order platform QEats with Java Spring Boot and MongoDB, implemented during Crio.Do externship program.",
       duration: "May 2019 - Jun 2019",
-      icon: <FaServer className="text-purple-400" />,
+      icon: <FaServer className="text-gray-300" />,
       features: [
         "RESTful API development",
         "MongoDB database integration",
@@ -109,14 +109,14 @@ const Projects = () => {
       ],
       technologies: ["Java", "Spring Boot", "MongoDB", "REST API"],
       category: "Backend",
-      color: "from-purple-500 to-pink-500",
+      color: "from-black to-gray-900",
       association: "Crio.Do"
     },
     {
       title: "QuakeReport",
       description: "A simple Android app which shows Earthquakes that occurred recently, using JSON parsing and array adapters with loader classes for HTTP requests.",
       duration: "Mar 2019 - Mar 2019",
-      icon: <FaAndroid className="text-green-400" />,
+      icon: <FaAndroid className="text-gray-300" />,
       features: [
         "JSON data parsing",
         "HTTP request handling",
@@ -125,13 +125,13 @@ const Projects = () => {
       ],
       technologies: ["Android", "Java", "JSON", "HTTP"],
       category: "Mobile",
-      color: "from-green-500 to-lime-500"
+      color: "from-gray-900 to-gray-800"
     },
     {
       title: "Face Recognition",
       description: "A Machine Learning project that identifies person faces and shows their names at runtime using KNN machine learning algorithm and OpenCV library.",
       duration: "Jan 2019 - Jan 2019",
-      icon: <FaEye className="text-cyan-400" />,
+      icon: <FaEye className="text-gray-300" />,
       features: [
         "Real-time face detection",
         "KNN algorithm implementation",
@@ -140,20 +140,20 @@ const Projects = () => {
       ],
       technologies: ["Python", "OpenCV", "KNN", "Machine Learning"],
       category: "Machine Learning",
-      color: "from-cyan-500 to-blue-500"
+      color: "from-gray-800 to-gray-900"
     }
   ]
 
   const categoryColors = {
-    "Full Stack": "bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-500/30",
-    "Frontend": "bg-gradient-to-r from-orange-500/20 to-yellow-500/20 border-orange-500/30",
-    "Backend": "bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-500/30",
-    "Mobile": "bg-gradient-to-r from-green-500/20 to-lime-500/20 border-green-500/30",
-    "Machine Learning": "bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-cyan-500/30"
+    "Full Stack": "bg-black/20 border-gray-700/50",
+    "Frontend": "bg-gray-900/20 border-gray-700/50",
+    "Backend": "bg-black/20 border-gray-700/50",
+    "Mobile": "bg-gray-900/20 border-gray-700/50",
+    "Machine Learning": "bg-black/20 border-gray-700/50"
   }
 
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding bg-black">
       <div className="container-max">
         <motion.div
           ref={ref}
@@ -170,7 +170,7 @@ const Projects = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               Featured <span className="gradient-text">Projects</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-accent-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-800 mx-auto rounded-full"></div>
             <p className="text-gray-300 mt-6 max-w-2xl mx-auto">
               A collection of projects showcasing my journey from college to becoming a senior software engineer
             </p>
@@ -220,13 +220,13 @@ const Projects = () => {
                 {/* Features */}
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-white mb-2 flex items-center">
-                    <HiCode className="mr-2 text-primary-400" />
+                    <HiCode className="mr-2 text-gray-400" />
                     Key Features:
                   </h4>
                   <ul className="grid grid-cols-1 gap-1 text-sm">
                     {project.features.map((feature, i) => (
                       <li key={i} className="flex items-start text-gray-300">
-                        <span className="w-1.5 h-1.5 bg-accent-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                        <span className="w-1.5 h-1.5 bg-gray-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
                         {feature}
                       </li>
                     ))}
@@ -236,14 +236,14 @@ const Projects = () => {
                 {/* Technologies */}
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-white mb-2 flex items-center">
-                    <HiTag className="mr-2 text-accent-400" />
+                    <HiTag className="mr-2 text-gray-400" />
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-2 py-1 bg-dark-700/50 border border-dark-600 rounded text-xs text-gray-300"
+                        className="px-2 py-1 bg-black border border-gray-700 rounded text-xs text-gray-300 shadow-lg"
                       >
                         {tech}
                       </span>

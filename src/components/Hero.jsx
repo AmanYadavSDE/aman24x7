@@ -27,7 +27,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center section-padding pt-20 bg-black">
       <div className="container-max">
         <motion.div
           variants={containerVariants}
@@ -41,8 +41,11 @@ const Hero = () => {
             className="mb-8 flex justify-center"
           >
             <div className="relative">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 p-1 animate-glow">
-                <div className="w-full h-full bg-dark-800 rounded-full flex items-center justify-center overflow-hidden">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-36 h-36 rounded-full bg-gradient-to-r from-gray-700 to-gray-800 p-1 shadow-2xl"
+              >
+                <div className="w-full h-full bg-black rounded-full flex items-center justify-center overflow-hidden border-2 border-gray-600">
                   <img 
                     src={`${import.meta.env.BASE_URL}image.jpg?v=${Date.now()}`}
                     alt="Aman Yadav" 
@@ -57,25 +60,28 @@ const Hero = () => {
                     <span className="text-4xl font-bold gradient-text">AY</span>
                   </div>
                 </div>
-              </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center">
+              </motion.div>
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center border-2 border-gray-800">
                 <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
               </div>
             </div>
           </motion.div>
 
-          {/* Main Heading */}
+          {/* Enhanced Main Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-shadow"
+            className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
           >
-            Hi, I'm <span className="gradient-text">Aman Yadav</span>
+            <span className="block text-gray-300 mb-2">Hi, I'm</span>
+            <span className="block bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent font-black tracking-tight">
+              Aman Yadav
+            </span>
           </motion.h1>
 
           {/* Subtitle */}
           <motion.h2
             variants={itemVariants}
-            className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-6 text-gray-300"
+            className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-6 text-gray-400"
           >
             SDE-2 @ Swiggy | 4+ Years Experience
           </motion.h2>
@@ -92,7 +98,7 @@ const Hero = () => {
           {/* Tagline */}
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
             Senior Software Engineer specializing in backend systems, distributed architecture, and scalable solutions. 
             Leading innovative projects at Swiggy with expertise in Go, Java, and cloud technologies.
@@ -107,7 +113,7 @@ const Hero = () => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-primary flex items-center justify-center glow-hover"
+              className="btn-primary flex items-center justify-center"
               onClick={(e) => {
                 e.preventDefault()
                 document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' })
@@ -132,7 +138,7 @@ const Hero = () => {
           {/* Social Links */}
           <motion.div
             variants={itemVariants}
-            className="flex justify-center space-x-6"
+            className="flex justify-center space-x-6 mb-12"
           >
             <motion.a
               href="https://www.linkedin.com/in/aman212yadav"
@@ -140,7 +146,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-3xl text-gray-400 hover:text-primary-400 transition-colors duration-300"
+              className="text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-300"
             >
               <FaLinkedin />
             </motion.a>
@@ -151,7 +157,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: -5 }}
               whileTap={{ scale: 0.9 }}
-              className="text-3xl text-gray-400 hover:text-primary-400 transition-colors duration-300"
+              className="text-3xl text-gray-400 hover:text-gray-300 transition-colors duration-300"
             >
               <FaGithub />
             </motion.a>
@@ -160,12 +166,13 @@ const Hero = () => {
           {/* Scroll Indicator */}
           <motion.div
             variants={itemVariants}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            className="flex justify-center mt-8"
           >
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
+              className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center cursor-pointer"
+              onClick={() => document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })}
             >
               <div className="w-1 h-3 bg-gray-400 rounded-full mt-2"></div>
             </motion.div>
